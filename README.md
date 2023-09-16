@@ -1,28 +1,38 @@
-# Firebase Realtime Database Demo
-This project demonstrates reading data in realtime from a Firebase Realtime Database using the Node.js Admin SDK.
+# Receptionist Admin Panel for Hospital Appointment Scheduling Solution
 
-Overview
-The Firebase Realtime Database is a cloud-hosted NoSQL database that allows storing and syncing data between users in realtime. This project shows how to connect to a Realtime DB from a Node.js server using the Firebase Admin SDK.
+## Overview
 
-The key components:
+This project serves as the Receptionist Admin Panel for the Hospital Appointment Scheduling Solution. It provides an interface for receptionists to manage appointment requests and doctor schedules efficiently.
 
-firebase-admin - Used to initialize app and get database reference
-Realtime DB rules - Defines read/write access
-value listener - Listens for changes at a database path
-onCreate/onUpdate/onDelete listeners - Listen for specific data change events
-Usage
-Clone the repo
+## Key Features:
 
-Run npm install
-Add your Firebase service account credentials
-Deploy DB rules
-Run node index.js to start listening for changes
-The index.js file contains examples of:
+- Review and process appointment requests from patients
+- Manage doctor schedules and availability
+- Monitor real-time status of doctor presence
+- Make adjustments for urgent appointments and walk-ins
 
-Querying data
-Listening for value changes
-Listening for create/update/delete events
-Further Reading
-Firebase Realtime Database Docs
-Admin SDK Reference
-Let me know if you would like me to expand or modify this README!
+## Usage
+
+1. Clone the repo
+2. Run `npm install`
+3. Add necessary environment configurations (if any)
+4. Start the server using `node index.js`
+
+The `index.js` file contains the core functionality of:
+
+- Reviewing appointment requests
+- Managing doctor schedules
+- Monitoring doctor presence status
+
+## Screenshots
+
+<img src="https://github.com/Dhaval-pathak/SIH-Hackathon-Admin-panel/assets/93087161/4188710c-4a55-4699-b3bc-b5dc67f60fe3" alt="Receptionist Admin Portal" >
+
+
+
+## Further Information
+
+For more details on how the Receptionist Admin Panel integrates with the overall Hospital Appointment Scheduling Solution, refer to the main [Hospital Appointment Scheduling Solution](https://github.com/Dhaval-pathak/SIH-Hackathon)
+
+
+Feel free to reach out if you need any further assistance or modifications to this README!
