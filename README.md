@@ -1,4 +1,4 @@
-Firebase Realtime Database Demo
+# Firebase Realtime Database Demo
 This project demonstrates reading data in realtime from a Firebase Realtime Database using the Node.js Admin SDK.
 
 Overview
@@ -12,6 +12,7 @@ value listener - Listens for changes at a database path
 onCreate/onUpdate/onDelete listeners - Listen for specific data change events
 Usage
 Clone the repo
+
 Run npm install
 Add your Firebase service account credentials
 Deploy DB rules
