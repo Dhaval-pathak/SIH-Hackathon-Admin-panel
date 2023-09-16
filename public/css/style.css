@@ -1,25 +1,57 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #cb5353;
+    background-color: #ffffff;
     
 }
 
 .booking-container {
-    margin: 20px;
-    padding: 20px;
-    background-color: #3e0202;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.booking-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
+    margin-top: 45px;
+    font-size: 35px;
+    font-weight: 600;
     text-align: center;
 }
 
+.request {
+    flex: 0 0 auto;  /* This ensures that the .request divs don't shrink or grow and take their actual width */
+    border: 1.5px solid black;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 400px;
+    margin-right: 10px;  /* Add some spacing between each .request div */
+}
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+/* Container for all booking requests */
+.booking-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+/* Container for each individual booking request */
+.request-box {
+    display: flex;
+    /* flex-wrap: wrap; Wrap to the next line if there's not enough space */
+    justify-content: center; /* Center the .request divs */
+    width: 100%; /* Take the full width of the parent container */
+    margin-bottom: 10px; /* Space between each request box */
+}
+
+/* Individual booking request */
+.request {
+    
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px; /* Add some padding inside the .request div */
+}
+
+/* Styling for the buttons */
 button {
     margin: 5px;
     padding: 8px 12px;
@@ -29,4 +61,5 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    width: 100px;
 }

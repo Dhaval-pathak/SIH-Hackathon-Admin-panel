@@ -1,4 +1,3 @@
-
 const admin = require('firebase-admin');
 
 const serviceAccount = require('./sihtest-3f5af-firebase-adminsdk-s5x1z-fcba313d6f.json');
@@ -70,12 +69,17 @@ function renderHTML(bookings) {
       </script>
       </head>
       <body>
-        <h1 class=".booking-container ">Booking Requests</h1>
+        <h1 class="booking-container ">Booking Requests</h1>
+        </body>
   `;
   bookings.forEach(booking => {
-    html += `<p>Patient Shivam is requesting a booking.</p>`;
+    html += `<div class="request-box" >`;
+    html += `<div class="request" >`;
+    html += `<p>Patient Shivam is requesting a booking with Doc. Andrew.</p>`;
     html += `<button onclick="acceptBooking('${booking.id}')">Accept </button>`;
     html += `<button onclick="rejectBooking('${booking.id}')">Reject</button><br><br>`;
+    html += `</div>`;
+    html += `</div>`;
   });
   return html;
 }
